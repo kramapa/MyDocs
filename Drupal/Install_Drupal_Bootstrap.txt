@@ -63,6 +63,10 @@
 	    - npm install --save-dev gulp-minify-css
 	    - npm install --save-dev gulp-uglify
 	    - npm install --save-dev gulp-rename
+	    - npm install --save-dev gulp-debug
 	- adapt the path in the gulpfile.js file
 	- run the less task 
 		- gulp less -> this will compile less/style.less to css/style.css
+			- missing variable error @link-hover-decoration
+				- overwrite the my_bootstrap_subtheme/less/variable.less with my_bootstrap_subtheme/bootstrap/less/variable.less
+				- recompile should work
