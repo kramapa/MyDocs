@@ -44,3 +44,25 @@
 		- configure in Admin Drupal 
 			- choose the 1.7 version in both boxes
 			- no CDN
+	- enable theme
+		- enable the Bootstrap theme 
+		- enable and set as default my_bootstrap_subtheme
+	- configure mytheme
+		- Appearance -> my_bootstrap_subtheme -> Advanced -> BOOTSTRAPCDN -> Disabled
+- Gulp
+	- in the ~/public_html/mydev folder create the gulp config
+	- npm init -> answer the questions (enter) -> this will create the package.json file
+	- npm install gulp
+		- install the following packages :
+	    - npm install --save-dev gulp-plumber
+	    - npm install --save-dev gulp-concat
+	    - npm install --save-dev gulp-autoprefixer
+	    - npm install --save-dev gulp-filesize
+	    - npm install --save-dev gulp-sass
+	    - npm install --save-dev gulp-less
+	    - npm install --save-dev gulp-minify-css
+	    - npm install --save-dev gulp-uglify
+	    - npm install --save-dev gulp-rename
+	- adapt the path in the gulpfile.js file
+	- run the less task 
+		- gulp less -> this will compile less/style.less to css/style.css
