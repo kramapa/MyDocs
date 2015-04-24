@@ -1,0 +1,46 @@
+=================================
+ Drupal dev setup with Bootstrap
+=================================
+
+1. Pre-requisites
+------------------
+- Ubuntu
+- apache
+- php
+- postgres
+- bootstrap
+
+
+- Drupal + Postgres install
+	- PG
+		- create user/db in pg
+  	- Apache
+	    - Vhost
+	    - DocumentRoot is ~/public_html/mydev/drupal
+	    - create  /etc/apache2/sites-available/mydev.local.conf
+	    - sudo a2ensite mydev.local.conf
+	    - sudo service apache2 reload
+	- Hosts
+		- create mydev.local + mydev in /etc/hosts
+	- Drupal
+  		- untar Drupal in ~/public_html/mydev
+  		- create a link drupal-version -> drupal
+  		- finish the setup on the browser
+  		- create custom and contrib folders in sites/all/modules
+
+- Bootstrap
+	- here we describe the Methode 1 install with the sources not CDN
+	- drush dl bootstrap theme
+	- create sub_theme
+		- cp -a bootstrap_subtheme -> my_bootstrap_subtheme
+		- rename .info file (remove the starterkit suffix)
+		- modify the .info file 
+			- replace kickstart
+			- change name and description
+			- uncomment the scripts lines and the disable CDN
+			- untar the bootstrap archive in the subtheme folder
+	- jQuery
+		- install the jquery-update module
+		- configure in Admin Drupal 
+			- choose the 1.7 version in both boxes
+			- no CDN
