@@ -33,15 +33,21 @@
 	- drush dl bootstrap theme
 	- create sub_theme
 		- cp -a bootstrap_subtheme -> my_bootstrap_subtheme
-		- rename .info file (remove the starterkit suffix)
+		- rename .info file to my_bootstrap_subtheme.info
 		- modify the .info file
 			- change name and description
 			- uncomment the scripts lines and the disable CDN
-			- untar the bootstrap archive in the subtheme folder
+	- untar the bootstrap archive in the subtheme folder
+		- update theme less files with the bootstrap source files
+			- boostrap.less and variables.less
+			- mv bootstrap/less/bootstrap.less less/bootstrap.less
+				- update the path to @import "../bootstrap/less/.."
+			- mv bootstrap/less/variables.less less/variables.less
 	- jQuery
-		- install the jquery-update module
+		- install the jquery_update module
 		- configure in Admin Drupal
 			- choose the 1.7 version in both boxes
+			- try keeping the 1.10 version but save the conf
 			- no CDN
 	- enable theme
 		- enable the Bootstrap theme
@@ -63,10 +69,22 @@
 	    - npm install --save-dev gulp-uglify
 	    - npm install --save-dev gulp-rename
 	    - npm install --save-dev gulp-debug
+	    - npm install --save-dev gulp-less-sourcemap
 	- adapt the path in the gulpfile.js file
 	- run the less task
 		- gulp less -> this will compile less/style.less to css/style.css
-			- missing variable error @link-hover-decoration
+			- if error missing variable error @link-hover-decoration
 				- overwrite the my_bootstrap_subtheme/less/variable.less with my_bootstrap_subtheme/bootstrap/less/variable.less
 				- recompile should work
 - Bootswatch
+	- download the bootswatch and variables less files into mytheme/less
+		- the variables file will replace the bootstrap variables.less from the sources file
+	- update styles.less file
+		- add @import bootswatch.less just after @import bootstrap.less
+	- variables.less adjustement
+		- change the value from ../fonts/ to ../bootstrap/fonts/
+
+- Custom Bootstrap
+	- mkdir -p mytheme/custom
+	- in styles.less add @import 'custom-bootstrap.less'
+
