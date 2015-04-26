@@ -34,18 +34,17 @@
 	- create sub_theme
 		- cp -a bootstrap_subtheme -> my_bootstrap_subtheme
 		- rename .info file (remove the starterkit suffix)
-		- modify the .info file 
-			- replace kickstart
+		- modify the .info file
 			- change name and description
 			- uncomment the scripts lines and the disable CDN
 			- untar the bootstrap archive in the subtheme folder
 	- jQuery
 		- install the jquery-update module
-		- configure in Admin Drupal 
+		- configure in Admin Drupal
 			- choose the 1.7 version in both boxes
 			- no CDN
 	- enable theme
-		- enable the Bootstrap theme 
+		- enable the Bootstrap theme
 		- enable and set as default my_bootstrap_subtheme
 	- configure mytheme
 		- Appearance -> my_bootstrap_subtheme -> Advanced -> BOOTSTRAPCDN -> Disabled
@@ -65,8 +64,9 @@
 	    - npm install --save-dev gulp-rename
 	    - npm install --save-dev gulp-debug
 	- adapt the path in the gulpfile.js file
-	- run the less task 
+	- run the less task
 		- gulp less -> this will compile less/style.less to css/style.css
 			- missing variable error @link-hover-decoration
 				- overwrite the my_bootstrap_subtheme/less/variable.less with my_bootstrap_subtheme/bootstrap/less/variable.less
 				- recompile should work
+- Bootswatch
