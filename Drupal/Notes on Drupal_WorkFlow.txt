@@ -1,0 +1,114 @@
+ Modules
+=========
+
+- Fences
+- Skinr
+- Fusion Accelerator
+- Box Class
+- Style Guide
+- Bootstrap
+    - ds_bootstrap_layouts
+    - panels_bootstrap_layouts
+    - views_bootstrap
+- Panels Import
+- Views Import
+- Views Maintenance
+- Embed Import
+- Adaptive Image Styles
+  - https://www.drupal.org/project/ais
+- Blockgroup
+- Views Datasource
+- AngularJS
+- drupalci
+- views_dataviz
+- NodeStream Drupal distribution - focused around workflows.
+- Maestro (workflow)
+- Switch user (use Masquerade instead)
+- Workflow
+    - access control document, set up early on with the clients
+    - keep it simple
+        - what is the lowest nb of roles you can get away with
+    - the most checkboxes
+    - has to be tested the most
+    - is assess security
+    - create use cases
+    - don't miss different access modules
+    - Acess
+        - without modules
+            - Drupal 'normal' way of doing (without any other module)
+                - who is the author of that content
+                - content admin role
+                - authenticate
+        - with modules
+            - Taxonomy access control (tac) module (https://www.drupal.org/project/taxonomy_access)
+                - assign taxonomy terms per role
+                - the problem comes with more and more roles coming => planing is important
+            - Content access (different approache thant tac) (https://www.drupal.org/project/content_access)
+                - can be applied before other forms of access control
+                - sometimes doesn't play nicely along with tac
+                - has waiting feature (which works nicely with OG)
+            - Fast permissions access module (http://drupal.org/project/fpa)
+            - Organic groups (module) - another approach of access
+                - you set up a template => the permissions cascade
+                - confusing aspect => create a secondary layer of permissions
+                - go with its defaults
+            - Field permissions (module)
+                - field level permissions
+                - easy to use when tied in with other systems, like
+        - Rebuild permissions
+            - sometimes you need to rebuild permissions
+        - Permissions don't roll so well with Features
+            - now it works fine but you need Strongarm (manually add the Strongarm variable)
+        - the access doesn't deal with state of content
+
+    - Dealing with states of content
+        - revisions mandatory or optional ?
+        - always disable preview because it never works (fals sens of security)
+        - out of the box Drupal requires high permissions to see unpublished content
+        - build your own views for people to see the content
+        - Revisioning
+            - so you can create Drafts
+            - Revisioning module (https://www.drupal.org/project/revisioning)
+                - twist of the way Drupal normally works
+                    - instead of creating a revision of past content, it allows you to create a revision of a draft, that's not alive yet
+                    - it separated permissions separately that the ability of making that content live on the site
+                    - you can create content authors separately from content editors or aprovals
+                    - close to moderation module in Workbench ?
+            - 4-5 aproval stages is massive overkill
+        - how do revisioning and workbench deal with image revisions
+            - some guy uses the Insert module along with cck (or entity) field
+        - node access user reference
+        - Devel modules very useful while setting up the roles
+            - it also allows you to switch users for testing
+        - don't give access to permissions but access to assign role
+            - Role assign module
+        - Custom permissions module
+            - allows to create permissions based on urls
+
+
+
+ Misc
+======
+
+- Style Prototyping
+
+ WebFonts
+==========
+- Web Font Downloader
+Module of the Week (Talking Drupal on YouTube)
+- Search Config - https://drupal.org/project/search_config
+
+Resources
+
+- TypeKit - https://typekit.com
+- Fonts.com (Monotype) - http://www.fonts.com/
+- Google - https://www.google.com/fonts
+- Fontdeck - http://fontdeck.com/
+- Hoefler & Co - http://www.typography.com/
+- WebINK - http://www.webink.com/
+
+Modules
+
+- FontYourFace Module - https://drupal.org/project/fontyourface
+- Rabbit Hole - https://drupal.org/project/rabbit_hole
+
