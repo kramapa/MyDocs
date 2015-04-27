@@ -88,3 +88,38 @@
 	- mkdir -p mytheme/custom
 	- in styles.less add @import 'custom-bootstrap.less'
 
+- Theme tree structure
+
+mydev/drupal/sites/all/themes/mybootstrap/
+├── bootstrap -> bootstrap-3.3.4
+├── bootstrap-3.3.4
+│   ├── <all the sources>
+├── css
+│   ├── README.txt
+│   ├── style.css
+│   └── style.css.map
+├── custom-bootstrap
+│   ├── css
+│   └── less
+│       ├── other.less
+│       └── variables.less
+├── favicon.ico
+├── less
+│   ├── README.txt
+│   ├── bootstrap.less
+│   ├── bootswatch.less
+│   ├── content.less
+│   ├── custom-bootstrap.less
+│   ├── footer.less
+│   ├── header.less
+│   ├── overrides.less
+│   ├── style.less
+│   └── variables.less
+├── logo.png
+├── maps
+│   └── style.css.map
+├── mybootstrap.info
+├── screenshot.png
+├── template.php
+└── templates
+    └── README.txt
