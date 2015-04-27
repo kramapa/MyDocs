@@ -96,8 +96,7 @@ mydev/drupal/sites/all/themes/mybootstrap/
 │   ├── <all the sources>
 ├── css
 │   ├── README.txt
-│   ├── style.css
-│   └── style.css.map
+│   └── style.css
 ├── custom-bootstrap
 │   ├── css
 │   └── less
