@@ -1,0 +1,22 @@
+========================================
+ Project Example with Jade and Boostrap
+========================================
+
+mydev_static/
+├── gulpfile.js
+└── site
+    ├── html
+    │   ├── css
+    │   ├── *.html
+    │   └── maps
+    ├── jade
+    │   ├── *.jade
+    │   ├── index.jade
+    │   └── mixins.jade
+    └── mybootstrap
+        ├── bootstrap -> bootstrap-3.3.4
+        ├── bootstrap-3.3.4
+        ├── css
+        ├── custom-bootstrap
+        ├── less
+        └── maps
