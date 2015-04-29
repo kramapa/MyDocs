@@ -1,11 +1,25 @@
  Modules
 =========
 
+- Buildamodule.com
+    - Administration Menu
+    - Module Filter
+    - Coffee
+    - Navigate
+    - Backup and Migrate
+    - Modules Instructions
+    - Admin
+    - Feeds
+    - Display Suite : region to block
+    - Coder
+    - Tips
+
 - Fences
 - Skinr
 - Fusion Accelerator
 - Box Class
 - Style Guide
+- Semantic Views
 - Bootstrap
     - ds_bootstrap_layouts
     - panels_bootstrap_layouts
