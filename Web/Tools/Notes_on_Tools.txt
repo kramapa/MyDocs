@@ -1,0 +1,21 @@
+ Chrome Dev Tools
+==================
+
+- devtools snippets
+- settings
+    - disable cache while dev tools is open
+- chrome://flags/#enable-devtools-experiments
+    - enable, add theme
+- timeline
+    - save as HAR file
+    - go and drag & drop to a HAR viewer
+    - javascript loaders ?
+- PonnyDebugger
+- Chrome Benchmarking extension
+- appify on Mac
+- chrome://predictors
+- chrome://net-internals/#sockets
+- chrome://net-internals/#dns
+- chrome://histograms/DNS
+- chrome://dns
+- SPDY

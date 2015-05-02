@@ -1,0 +1,22 @@
+ Ryan Dahl
+===========
+- Clojures
+- Anonymous functions
+
+ Misc
+======
+- Modulus
+    - pm2
+    - forever
+    - node-inspector
+    - aperture
+    - fulcrum
+    - congress
+    - medusa
+    - backbone
+    - redis
+    - express
+    - hapi
+    - restify
+    - crackingjs
+
