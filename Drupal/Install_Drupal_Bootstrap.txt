@@ -69,7 +69,8 @@
 	    - npm install --save-dev gulp-uglify
 	    - npm install --save-dev gulp-rename
 	    - npm install --save-dev gulp-debug
-	    - npm install --save-dev gulp-less-sourcemap
+	    - npm install --save-dev gulp-sourcemaps
+	   	- npm install --save-dev gulp-livereload
 	- adapt the path in the gulpfile.js file
 	- run the less task
 		- gulp less -> this will compile less/style.less to css/style.css
@@ -87,6 +88,7 @@
 - Custom Bootstrap
 	- mkdir -p mytheme/custom
 	- in styles.less add @import 'custom-bootstrap.less'
+	- in custom-bootstrap.less add imports to ../custom-bootstrap/less/variables.less and ../custom-bootstrap/less/other.less
 
 - Theme tree structure
 
@@ -122,3 +124,7 @@ mydev/drupal/sites/all/themes/mybootstrap/
 ├── template.php
 └── templates
     └── README.txt
+
+
+- Map
+	- in the maps directory the style.css.map will be created
