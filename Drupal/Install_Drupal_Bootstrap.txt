@@ -128,3 +128,20 @@ mydev/drupal/sites/all/themes/mybootstrap/
 
 - Map
 	- in the maps directory the style.css.map will be created
+
+- Menu
+	- underline hover
+		- http://codepen.io/rm/pen/ldhon
+		- http://jsfiddle.net/46a8u/27/
+		- http://bradsknutson.com/blog/css-sliding-underline/
+		- http://learnwebtutorials.com/css-hover-effect
+		- https://css-tricks.com/forums/topic/ie8-have-problem-to-work-with-my-css-code/
+
+- Misc
+	- use uncss to remove unused css
+	- combine-mq
+	- http://beneb.info/2015/01/taming-the-beast-optimising-bootstrap-3/
+	- good css minifiers : gulp-css-condense, or gulp-csso, gulp-more-css and gulp-cssshrink.
+	- lazypipe!
+	- Weinre for mobile testing
+		- ngrok

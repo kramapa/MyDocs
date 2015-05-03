@@ -33,3 +33,11 @@ JoshBroton.com talk
 - responsive images
     - w3 forum
 - picturefill.js
+
+ Misc
+======
+
+- csslint
+- Html Inspector (Philip Walton)
+- GhostStory (CucumberNodeSpookyCasperPhantom)
+- Hardy
