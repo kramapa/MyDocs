@@ -1,0 +1,72 @@
+ Notes on Drupal
+=================
+
+- Development
+    - https://www.drupal.org/coding-standards
+
+- Modules
+    - Buildamodule.com
+        - Administration Menu
+        - Module Filter
+        - Coffee
+        - Navigate
+        - Backup and Migrate
+        - Modules Instructions
+        - Admin
+        - Feeds
+        - Display Suite : region to block
+        - Coder
+        - Tips
+    - Search 404
+    - Getskeleton theme
+    - Fences
+    - Node export
+    - Coder
+    - Job_scheduler
+    - Simplify
+    - Skinr
+    - Fusion Accelerator
+    - Box Class
+    - Style Guide
+    - Semantic Views
+    - Bootstrap
+        - ds_bootstrap_layouts
+        - panels_bootstrap_layouts
+        - views_bootstrap
+    - Panels Import
+    - Views Import
+    - Views Maintenance
+    - Embed Import
+    - Adaptive Image Styles
+      - https://www.drupal.org/project/ais
+    - Blockgroup
+    - Views Datasource
+    - AngularJS
+    - drupalci
+
+
+- Misc
+    - Style Prototyping
+    - Tree Jack
+    - Theme Mothership and Beef - proper html tags
+
+- WebFonts
+    - Web Font Downloader
+    Module of the Week (Talking Drupal on YouTube)
+    - Search Config - https://drupal.org/project/search_config
+    - Resources
+        - TypeKit - https://typekit.com
+        - Fonts.com (Monotype) - http://www.fonts.com/
+        - Google - https://www.google.com/fonts
+        - Fontdeck - http://fontdeck.com/
+        - Hoefler & Co - http://www.typography.com/
+        - WebINK - http://www.webink.com/
+    - Modules
+        - FontYourFace Module - https://drupal.org/project/fontyourface
+        - Rabbit Hole - https://drupal.org/project/rabbit_hole
+
+- Responsive Images
+    - Modules
+        - Pictures
+        - Breakpoints
+
