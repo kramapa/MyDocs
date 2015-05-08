@@ -5,3 +5,4 @@
         - http://bradsknutson.com/blog/css-sliding-underline/
         - http://learnwebtutorials.com/css-hover-effect
         - https://css-tricks.com/forums/topic/ie8-have-problem-to-work-with-my-css-code/
+        - http://www.dynamicdrive.com/style/csslibrary/item/thick_underline_menu/
