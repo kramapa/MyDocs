@@ -14,6 +14,13 @@
 
 - Fonts
     - https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=en#defining-font-family-with-font-face
+        - https://github.com/behdad/fonttools/blob/master/Lib/fontTools/subset.py#L16
+    - Font Loading API
+        - http://dev.w3.org/csswg/css-font-loading/
+    - Font Loader Polyfill
+        - https://github.com/bramstein/fontloader
+    - WebFont Loader
+        - https://github.com/typekit/webfontloader
 
 - Guides
     - http://codeguide.co/
