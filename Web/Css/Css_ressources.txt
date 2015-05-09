@@ -12,6 +12,9 @@
     - http://www.html5rocks.com/en/
     - https://codeascraft.com/2015/02/02/transitioning-to-scss-at-scale/
 
+- Fonts
+    - https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=en#defining-font-family-with-font-face
+
 - Guides
     - http://codeguide.co/
     - http://wtfhtmlcss.com/
