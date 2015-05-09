@@ -138,3 +138,4 @@ mydev/drupal/sites/all/themes/mybootstrap/
 	- Weinre for mobile testing
 		- ngrok
 	- use recess (with gulp for css and less linting)
+	- use blesscss for the ie css selectors limit
