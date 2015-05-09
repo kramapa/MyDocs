@@ -139,3 +139,4 @@ mydev/drupal/sites/all/themes/mybootstrap/
 		- ngrok
 	- use recess (with gulp for css and less linting)
 	- use blesscss for the ie css selectors limit
+	- editorconfig to make sure we use the same styles
