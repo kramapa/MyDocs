@@ -43,6 +43,7 @@
     - Views Datasource
     - AngularJS
     - drupalci
+    - Menu attributes
 
 
 - Misc
