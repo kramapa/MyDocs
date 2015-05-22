@@ -1,0 +1,7 @@
+ Build your first drupal 7 web site - videos
+============================================
+
+- Clean urls
+    - http.conf
+        - AllowOverride All
+    - Admin -> Configuration -> Search and Metadata -> Clean Urls
