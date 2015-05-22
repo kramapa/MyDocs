@@ -5,3 +5,14 @@
     - http.conf
         - AllowOverride All
     - Admin -> Configuration -> Search and Metadata -> Clean Urls
+
+- pathauto
+    - change pattern evebtually
+    - update aliases to pathauto
+        - delete aliases (select one by one)
+        - then bulk update
+- modules
+    - webform
+    - token
+    - date, date_views, date_popup
+    - references, node_reference
