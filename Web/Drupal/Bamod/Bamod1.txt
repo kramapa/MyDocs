@@ -16,3 +16,4 @@
     - token
     - date, date_views, date_popup
     - references, node_reference
+    - masquerade (users and roles)
