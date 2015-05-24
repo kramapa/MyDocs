@@ -29,5 +29,7 @@
         - comes short on permissions vs roles
     - IMCE
         - Media alternative
-        - wysiwyg integration
+        - wysiwyg integration through the imce_wysiwyg module
         - nice permissions/roles support
+        - Wysiwyg -> profile -> css, also check Font Style in plugins
+            - define css file
