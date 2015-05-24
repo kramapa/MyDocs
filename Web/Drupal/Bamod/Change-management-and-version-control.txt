@@ -40,9 +40,41 @@
         - git tag 1.2 1.1
         - git tag -l
         - git tag -d 1.1
+    - remote repos
+        - local -> remote
+            - first have a local gti repo
+            - create repo on github
+            - git remote add origin https://<user>:<token>@github.com/<user>/<remote_repo>
+            - git push -u origin master
+            - git branch -a
+        - local <- remote
+            - git clone https://<user>:<token>@github.com/<user>/<remote_repo>
+            - git fetch
+            - git status
+            - git branch -a
+            - git merge origin/master
+    - release branch
+        - git tag -l (example we see 1.2 and 1.3)
+        - git checkout -b release-1.4
+        - git push origin release-1.4
 
 - SmartGit (graphical interface)
-
+- Gitflow
+    - nvie.com/posts/a-successful-git-branching-model/
 - public git repositories
      - github
      - unfuddle ?
+
+- database version control
+    - export the schema (from the production site)
+        - pg_dump -s databasename > schema.sql (to be verified)
+
+- modules
+    - features
+    - diff
+
+- drush
+    - drushmake.me
+    - aliases for managing different sites
+    - drush watchdog-show
+    - drush watchdog-list
