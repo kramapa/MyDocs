@@ -7,7 +7,7 @@
     - Admin -> Configuration -> Search and Metadata -> Clean Urls
 
 - pathauto
-    - change pattern evebtually
+    - change the pattern eventually
     - update aliases to pathauto
         - delete aliases (select one by one)
         - then bulk update
@@ -17,3 +17,9 @@
     - date, date_views, date_popup
     - references, node_reference
     - masquerade (users and roles)
+    - css injector
+    - text format and roles/permissions
+    - Wysiwyg
+    - Media
+        - integration with Wysiwyg
+            - see Media Help page
