@@ -1,4 +1,32 @@
  Advanced site building in drupal - videos
 ============================================
 
+- modules
+    - admin_menu
+    - coffee
+    - module_filter
+    - fivestar
+        - voting API (drupal.org/node/68851)
+    - metatags (useful if title is removed from panels)
+        - useful for integration with social services
+    - feeds
+    - feeds_tamper
+
+- display product review on the sidebar
+    - view modes
+        -default drupal
+            - manage display
+                - default
+                - teaser
+    - here are 4 ways to position a content
+        - 1. Use a view in a block positioned in a region (using a view mode or fields)
+            - manage display
+                - format -> rendered entity -> cog wheel -> full content
+                - none of the existing view modes is interesting so we need to create a new view mode (throught Display Suite)
+        - 2. Display Suite: Custom layout
+            - install ds, ds extras, ds format and ds UI
+            - content type -> manage display -> create new view mode
+        - 3. Display Suite: Region to block
+        - 4. Panels (custom layout)
+
 
