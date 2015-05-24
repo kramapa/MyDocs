@@ -1,0 +1,7 @@
+ Change management and version control
+=======================================
+
+- git
+    - git -a commit -m "Message"
+        - "-a" commits added and modified files
+    - git diff
