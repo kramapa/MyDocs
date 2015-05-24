@@ -2,6 +2,47 @@
 =======================================
 
 - git
+    - git init
+    - git add .
     - git -a commit -m "Message"
         - "-a" commits added and modified files
-    - git diff
+    - git diff (git help diff)
+    - .git/info/exclude
+    - git reset HEAD (unstages changes) - roll back to the HEAD
+    - git reset --hard
+    - git clean -n (remove untracked files)
+    - git clean -f
+    - git log
+    - git log --oneline
+    - git revert HEAD (the safe way)
+    - git reset --hard <hash> (the disruptive way)
+    - move
+        - 1. git mv
+        - 2. move files then git add -A
+    - branching
+        - git checkout -b input-feature (creates and switches to input-feature)
+        - git branch
+        - git checkout master (o reswitch to master)
+        - git merge input-feature
+        - git reset --hard <hash> (undo merge without fast forward)
+        - git merge --no-ff input-feature
+        - git commit --amend (modify last comment)
+        - git branch -d input-feature (deletes the branch)
+        - stashing
+            - git stash save "message"
+            - git stash list
+            - git stash apply <name>
+            - git stash drop <name>
+    - tags
+        - git tag 1.1 -a -m "message"
+        - git tag -l
+        - git reset --hard 1.1
+        - git tag 1.2 1.1
+        - git tag -l
+        - git tag -d 1.1
+
+- SmartGit (graphical interface)
+
+- public git repositories
+     - github
+     - unfuddle ?
