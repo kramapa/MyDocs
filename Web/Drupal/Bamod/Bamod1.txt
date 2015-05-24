@@ -20,6 +20,14 @@
     - css injector
     - text format and roles/permissions
     - Wysiwyg
+        - ckeditor
     - Media
         - integration with Wysiwyg
             - see Media Help page
+            - wysiwyg -> text format -> ckeditor -> plugins
+                - enable media browser
+        - comes short on permissions vs roles
+    - IMCE
+        - Media alternative
+        - wysiwyg integration
+        - nice permissions/roles support
