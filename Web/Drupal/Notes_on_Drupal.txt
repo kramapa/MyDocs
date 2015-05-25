@@ -48,6 +48,8 @@
     - AngularJS
     - drupalci
     - Menu attributes
+    - pathauto
+    - pathauto_persist
 
 
 - Misc

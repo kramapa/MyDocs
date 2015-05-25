@@ -122,9 +122,30 @@
             - reports -> status reports -> a function to rebuild permissions
         - permissions don't roll so well with Features, but it's getting better
             - you need to use strongarm in conjuction with features
+        - delegation module
+        - page-level vs field-level permissions
+            - field permissions module
+        - content-level permissions
+            - content_access module
+            - simple access module
+        - field_entity module
+        - node_access + OG seems to work fine
+        - role_assign module
+        - role_delegation module
+        - custom_permissions module (in conjunction with the abobe two)
+
+- Module of the week
+    - string_override module
+    - facebook post
+
+- Organic groups
+    - paragraph module
+    - field_groups module
+    - flag module
+    - open atrium
 
 - States of content
-    - out of the box you have teh ability to turn revisions on
+    - out of the box you have the ability to turn revisions on
         - revisions requires or optional (on the content type page)
     - before making the content live, if you turn the revision on you can go back to it but it doesn't allow you to make a draft
     - allways disable preview because creates confusion and never works
@@ -155,6 +176,7 @@
     - role assign module ?
     - custom permissions module
         - permissions per url
+
 
  Workbench
 ===========
