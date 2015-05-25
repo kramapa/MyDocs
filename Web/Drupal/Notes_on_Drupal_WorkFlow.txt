@@ -66,5 +66,95 @@
         - Custom permissions module
             - allows to create permissions based on urls
 
+ Content approval workflow
+===========================
+
+- the place where you check the most boxes
+    - involves security, usability
+    - the place that has to be tested the most
+    - need to come up with use cases
+    - keep it simple
+
+- Access
+    - what Drupal does on its own
+        - create multiple content types
+        - create roles (anonymous and authenticated users)
+        - first create some sort of admin role
+        - then create some sort of authenticated role
+        - each content types gets 5 permissions :
+            - create own content
+            - edit own content
+            - edit any user's content
+            - delete own
+            - delete any
+        - the question is "who is the author of that content"
+    - out of the box
+        - tac module
+            - example : for building a knowledge base (reorganise stuff in a blog) they use tac (taxonomy access module)
+            - set up a taxonomy for a blog post
+            - create a role and assign the taxonomy to
+            - another example : online shop, create a taxonomy term per item and that gives them access to the course
+        - content_access module (it allows you to wait the permission)
+            - quite conflicts with tac
+        - honest assessment and planing
+            - what is the minimum nb of roles that you can get away with it
+            - access control workflow based of the wireframe and check out with the client
+        - sometimes you need many roles
+            - fpa (fast permission access)
+        - another approach
+            - OG (organic groups)
+                - you create groups and add content to groups
+                    - can add content to different groups
+                - you set up a template for permissions
+                - very powerful
+                - somewhat confusing : creates a second layer of permissions
+                - if you go with the default - limited
+                - it makes sense if you create your own world
+                - in many cases it may replace tac
+                - it's easy to have a 1000 of groups but you kill the site with 1000 roles
+        - don't mix access modules unless you want a major headache
+        - field level permissions
+            - field permissions module
+                - example : add fields to a user account
+                - good for subscription type things
+                - to tie in external ids into the system
+        - some times you need to rebuild permissions
+            - reports -> status reports -> a function to rebuild permissions
+        - permissions don't roll so well with Features, but it's getting better
+            - you need to use strongarm in conjuction with features
+
+- States of content
+    - out of the box you have teh ability to turn revisions on
+        - revisions requires or optional (on the content type page)
+    - before making the content live, if you turn the revision on you can go back to it but it doesn't allow you to make a draft
+    - allways disable preview because creates confusion and never works
+        - false sens of security
+    - out of the box you cannot see unpublished content unless you have high permissions
+        - there is a module that allows you that
+        - it can be a pitfall
+        - the solution is to create your own view to allow people to list content and administer it
+            - make a feature or a module for that
+    - revisioning (module)
+        - a tweak to how Drupal normally works
+            - creates a revision for content created in the past
+        - create a revision for a draft
+        - in addition it separates permissions
+            - in that way you create different roles : "content authors", different from "content editors" or "content approvers"
+            - you can use rules to send an e-mail after the author has created the draft
+            - you can also schedule it to go live at a certain date
+        - close in concept with the workbench moderation module
+            - it creates stages of content
+            - you can assign to roles
+            - how does it deal with images
+        - you need to check a lot of boxes for revisioning
+    - a module that assigns user reference to content type
+        - it creates multiple authors
+    - the devel module
+        - you can see what role can access that content and why
+        - switch users for testing
+    - role assign module ?
+    - custom permissions module
+        - permissions per url
+
 
 

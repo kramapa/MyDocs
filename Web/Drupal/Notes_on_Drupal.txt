@@ -29,6 +29,7 @@
     - Box Class
     - Style Guide
     - Semantic Views
+    _ Template field
     - Bootstrap
         - ds_bootstrap_layouts
         - panels_bootstrap_layouts
