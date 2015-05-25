@@ -156,5 +156,137 @@
     - custom permissions module
         - permissions per url
 
+ Workbench
+===========
+
+- bare bones Drupal
+- create users : author, publisher
+- create and attribute roles : content creator, web publisher
+- install the following modules
+    - for admin
+        - admin_menu (dis toolbar)
+        - coffee
+        - module_filter
+        - fpa
+    - for workbench
+        - ctools
+        - field
+        - field sql storage
+        - options
+        - taxonomy
+        - views
+        - workbench
+        - workbench access
+        - workbench moderation
+- create a content type (ex "web page")
+    - publish options
+        - uncheck
+            - published
+            - promoted
+        - check
+            - create new revision
+            - enable modereation of rev
+            - enforce
+            - default mod state : draft
+- permissions
+    - people -> permissions -> roles
+        - content creator
+            - view published content
+            - view own pub content
+            - view content revisions
+            - web page create new content
+            - web page edit own content
+            - view administration theme
+            - use admin toolbar
+            - access myworkbench
+            - allow all members of this role to be assigned to WB access sections
+            - view moderation history
+            - view mod message on a node
+            - use "My Drafts" wb tab
+            - mod all content from draft to needs review
+        - web publisher
+            - administer menus and menu items
+            - view pub content
+            - view own pub content
+            - view content rev
+            - revert content rev
+            - delete content rev
+            - web page create new content
+            - web page edit any content
+            - web page delete any content
+            - view the admin theme
+            - use admin toolbar
+            - access my workbench
+            - allow all members of this role to be assigned to WB access sections
+            - view all unpub content
+            - view moderation history
+            - view the mod messages on a node
+            - Use "My drafts" workbench tab
+            - Use "Needs review" workbench tab
+            - Moderate all content from Draft to Needs Review
+            - Moderate all content from Needs Review to Draft
+            - Moderate all content from Needs Review to Published
+- structure
+    - taxonomy -> add vocabulary
+        - Name : "Web page Workflow"
+        - Web pahe Workflow -> add terms
+            - Name : Web page Publishers
+            - new term
+                - Name : Web page Creators
+                - relations : Web page Publishers (parent term)
+- configuration
+    - WB access
+        - settings
+            - select taxonomy
+            - Taxonomy scheme settings
+                - check Web page Workflow
+            - Enabled content types
+                - uncheck everything except Web page
+            - Workbench Access message label
+                - check Automated section assignment
+        - roles
+            - Web page publishers
+                - check web publishers
+                    - update roles
+        - roles
+            - Web page Creators
+                - check content creator
+                    - update roles
+    - WB moderation
+        - states
+            - drafts
+            - needs review
+            - published
+        - transitions
+            - draft --> needs review
+            - needs review -> draft
+            - needs review -> published
+- login author (in a diff browser)
+    - enable toolbar
+    - setup permissions for toolbar
+    - toolbar -> my workbench
+        - create content
+            - Web page
+                - Title
+                - Section
+                    - Web page creators
+                - Body
+                - Revision information
+                    - Moderation state
+                        - Needs review to submit to the publisher
+- login publisher (in a diff browser)
+    - my workbench
+        - needs review
+        - select the page that needs review
+        - if the page is not ready yet and want to sent it back to the creator
+            - edit draft
+                - revision information
+                - choose draft
+
+
+
+
+
+
 
 
